@@ -32,8 +32,8 @@ function computerSceglie() {
 function gioco() {
     computerSceglie();
 
-    let playerVince = 'P1 sceglie <i>'+giocatore+'</i> e <b>vince</b> contro <i>'+computer+'</i>';
-    let computerVince = 'CPU sceglie <i>'+computer+'</i> e <b>vince</b> contro <i>'+giocatore+'</i>';
+    let playerVince = '<span class="reds">P1</span> sceglie <i>'+giocatore+'</i> e <span class="reds">vince</span> contro <i>'+computer+'</i>';
+    let computerVince = '<span class="reds">CPU</span> sceglie <i>'+computer+'</i> e <span class="reds">vince</span> contro <i>'+giocatore+'</i>';
     let draw = 'pareggio! (entrambi hanno scelto '+giocatore+')';
 
     if (giocatore == computer) {

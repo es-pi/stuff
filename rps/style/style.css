@@ -23,14 +23,16 @@ html {
 img {
   width: 50%;
   height: auto;
+  padding: 1em;
 }
 
 button {
   background-color: white;
+  border: 1px solid lightgrey;
 }
 
 button:hover {
-  border: 2px solid crimson;
+  border: 1px solid crimson;
 }
 
 #scores {
@@ -51,4 +53,23 @@ th {
 
 tr:nth-child(even) {
   background-color: #dddddd;
+}
+
+.reds {
+  color: crimson;
+}
+
+#credits {
+  font-size: 0.8em;
+  text-align: center;
+  margin-top: 2em;
+}
+
+#credits a {
+  text-decoration: none;
+  color: crimson;
+}
+
+#credits a:hover {
+  text-decoration: underline;
 }
