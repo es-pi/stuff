@@ -32,9 +32,9 @@ function computerSceglie() {
 function gioco() {
     computerSceglie();
 
-    let playerVince = '<span class="reds">P1</span> sceglie <i>'+giocatore+'</i> e <span class="reds">vince</span> contro <i>'+computer+'</i>';
-    let computerVince = '<span class="reds">CPU</span> sceglie <i>'+computer+'</i> e <span class="reds">vince</span> contro <i>'+giocatore+'</i>';
-    let draw = 'pareggio! (entrambi hanno scelto '+giocatore+')';
+    let playerVince = '<span class="reds">P1 vince</span><br><i>'+giocatore+'</i> contro <i>'+computer+'</i>';
+    let computerVince = '<span class="reds">P1 vince</span><br><i>'+computer+'</i> contro <i>'+giocatore+'</i>';
+    let draw = 'pareggio!<br>(entrambi hanno scelto <i>'+giocatore+'</i>)';
 
     if (giocatore == computer) {
         console.log(draw);
