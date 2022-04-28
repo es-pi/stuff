@@ -9,7 +9,7 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   font-family: 'Share Tech Mono', monospace;
 }
 
@@ -52,6 +52,7 @@ th {
   text-align: center;
   font-size: 1.5em;
   padding: 8px;
+  width: 50%;
 }
 
 tr:nth-child(even) {

@@ -37,10 +37,10 @@ function computerSceglie() {
 function gioco() {
     computerSceglie();
 
-    let playerVince = '<span class="reds">P1 vince</span><br><i>'+giocatore+'</i> contro <i>'+computer+'</i>';
-    let computerVince = '<span class="reds">P1 vince</span><br><i>'+computer+'</i> contro <i>'+giocatore+'</i>';
+    let playerVince = '<span class="reds">Vinci tu!</span><br><i>'+giocatore+'</i> contro <i>'+computer+'</i>';
+    let computerVince = '<span class="reds">Vince la CPU!</span><br><i>'+computer+'</i> contro <i>'+giocatore+'</i>';
     let draw = '<span class="reds">pareggio!</span><br>(entrambi hanno scelto <i>'+giocatore+'</i>)';
-    let shoot = '<span class="reds">P1 vince!</span><br>(<i>un mitra vince sempre</i>)';
+    let shoot = '<span class="reds">Vinci tu!</span><br>(<i>è un mitra, cosa ti aspettavi?</i>)';
 
     if (giocatore == computer) {
         console.log(draw);
