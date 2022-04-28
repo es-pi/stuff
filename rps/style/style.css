@@ -14,14 +14,15 @@ html {
 }
 
 #buttons {
-  width: 50vw;
+  width: 50%;
   display: flex;
-  justify-content: center;
-  margin: 2em;
+  justify-content: space-around;
+  margin: 2em 0 2em 0;
 }
 
 img {
-  width: 50%;
+  max-width: 100%;
+  width: 5rem;
   height: auto;
   padding: 1em;
 }
@@ -29,6 +30,7 @@ img {
 button {
   background-color: white;
   border: 1px solid lightgrey;
+  border-radius: 10px;
 }
 
 button:hover {
@@ -48,6 +50,7 @@ td,
 th {
   border: 1px solid #dddddd;
   text-align: center;
+  font-size: 1.5em;
   padding: 8px;
 }
 
@@ -73,3 +76,21 @@ tr:nth-child(even) {
 #credits a:hover {
   text-decoration: underline;
 }
+
+@media screen and (max-width: 970px) {
+  #buttons {
+    width: 100%;
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  img {
+    width: 2rem;
+  }
+
+  td,th {
+    font-size: 1em;
+  }
+}
+

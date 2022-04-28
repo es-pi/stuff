@@ -34,7 +34,7 @@ function gioco() {
 
     let playerVince = '<span class="reds">P1 vince</span><br><i>'+giocatore+'</i> contro <i>'+computer+'</i>';
     let computerVince = '<span class="reds">P1 vince</span><br><i>'+computer+'</i> contro <i>'+giocatore+'</i>';
-    let draw = 'pareggio!<br>(entrambi hanno scelto <i>'+giocatore+'</i>)';
+    let draw = '<span class="reds">pareggio!</span><br>(entrambi hanno scelto <i>'+giocatore+'</i>)';
 
     if (giocatore == computer) {
         console.log(draw);
