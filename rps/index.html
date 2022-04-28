@@ -1,19 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+    <title>Rock Paper Scissors</title>
 </head>
 <body>
+    <section>
+        <h1>
+            Rock Paper Scissors
+        </h1>
+    </section>    
     <section id="buttons">
-        <input type="button" value="sasso" id="sasso">
-        <input type="button" value="carta" id="carta">
-        <input type="button" value="forbici" id="forbici">
+        <button value="sasso" id="sasso">
+            <img src="imgs/sasso.png" alt="sasso">
+        </button>
+        <button value="carta" id="carta">
+            <img src="imgs/carta.png" alt="carta">
+        </button>
+        <button value="forbici" id="forbici">
+            <img src="imgs/forbici.png" alt="forbici">
+        </button>
     </section>
-
 
     <section id="scores">
         <table>
@@ -31,9 +41,14 @@
                     <span id="computerPunti">0</span>
                 </td>
             </tr>
+            <tr>
+                <td colspan="2">
+                    <span id="risultato">aspettando...</span>
+                </td>
+            </tr>
         </table>
     </section>
 
-    <script type="text/javascript" src="engine.js"/>
+    <script type="text/javascript" src="js/engine.js"/>
 </body>
 </html>

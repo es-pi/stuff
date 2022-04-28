@@ -32,20 +32,28 @@ function computerSceglie() {
 function gioco() {
     computerSceglie();
 
+    let playerVince = 'P1 sceglie <i>'+giocatore+'</i> e <b>vince</b> contro <i>'+computer+'</i>';
+    let computerVince = 'CPU sceglie <i>'+computer+'</i> e <b>vince</b> contro <i>'+giocatore+'</i>';
+    let draw = 'pareggio! (entrambi hanno scelto '+giocatore+')';
+
     if (giocatore == computer) {
-        console.log('pareggio! (entrambi hanno scelto '+giocatore+')');
-        alert('pareggio! (entrambi hanno scelto '+giocatore+')');
+        console.log(draw);
+        document.querySelector("#risultato").innerHTML = draw;
     } else if (giocatore == 'sasso' && computer == 'carta') {
-        console.log('CPU sceglie '+computer+' e vince contro ' + giocatore);
+        console.log(computerVince);
+        document.querySelector("#risultato").innerHTML = computerVince;
         computerPunti++;
     } else if (giocatore == 'carta' && computer == 'forbici') {
-        console.log('CPU sceglie '+computer+' e vince contro ' + giocatore);
+        console.log(computerVince);
+        document.querySelector("#risultato").innerHTML = computerVince;
         computerPunti++;
     } else if (giocatore == 'forbici' && computer == 'sasso') {
-        console.log('CPU sceglie '+computer+' e vince contro ' + giocatore);
+        console.log(computerVince);
+        document.querySelector("#risultato").innerHTML = computerVince;
         computerPunti++;
     } else {
-        console.log('P1 sceglie '+giocatore+' e vince contro '+computer);
+        console.log(playerVince);
+        document.querySelector("#risultato").innerHTML = playerVince;
         giocatorePunti++;
     }
 
