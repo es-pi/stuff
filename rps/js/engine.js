@@ -18,6 +18,11 @@ document.querySelector("#forbici").addEventListener("click", function () {
   gioco();
 });
 
+document.querySelector("#mitra").addEventListener("click", function () {
+  giocatore = "mitra";
+  gioco();
+});
+
 function computerSceglie() {
     computer = Math.floor(Math.random() * 3);
     if (computer == 0) {
@@ -35,6 +40,7 @@ function gioco() {
     let playerVince = '<span class="reds">P1 vince</span><br><i>'+giocatore+'</i> contro <i>'+computer+'</i>';
     let computerVince = '<span class="reds">P1 vince</span><br><i>'+computer+'</i> contro <i>'+giocatore+'</i>';
     let draw = '<span class="reds">pareggio!</span><br>(entrambi hanno scelto <i>'+giocatore+'</i>)';
+    let shoot = '<span class="reds">P1 vince!</span><br>(<i>un mitra vince sempre</i>)';
 
     if (giocatore == computer) {
         console.log(draw);
@@ -50,7 +56,11 @@ function gioco() {
     } else if (giocatore == 'forbici' && computer == 'sasso') {
         console.log(computerVince);
         document.querySelector("#risultato").innerHTML = computerVince;
-        computerPunti++;
+        computerPunti++; 
+    } else if (giocatore == 'mitra'){
+        console.log(shoot);
+        document.querySelector("#risultato").innerHTML = shoot;
+        giocatorePunti++;
     } else {
         console.log(playerVince);
         document.querySelector("#risultato").innerHTML = playerVince;
