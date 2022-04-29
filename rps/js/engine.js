@@ -53,22 +53,22 @@ function gioco() {
 
     // la logica viene calcolata con un classico if else. switch non era la scelta migliore in questo caso (si inceppava il pareggio)
     if (giocatore == computer) {
-        console.log(draw);
+        console.log(giocatore+' '+computer);
         document.querySelector("#risultato").innerHTML = draw;
     } else if (giocatore == 'sasso' && computer == 'carta') {
-        console.log(computerVince);
+        console.log(computer);
         document.querySelector("#risultato").innerHTML = computerVince;
         computerPunti++;
     } else if (giocatore == 'carta' && computer == 'forbici') {
-        console.log(computerVince);
+        console.log(computer);
         document.querySelector("#risultato").innerHTML = computerVince;
         computerPunti++;
     } else if (giocatore == 'forbici' && computer == 'sasso') {
-        console.log(computerVince);
+        console.log(computer);
         document.querySelector("#risultato").innerHTML = computerVince;
         computerPunti++; 
     } else if (giocatore == 'mitra'){
-        console.log(shoot);
+        console.log(giocatore);
         document.querySelector("#risultato").innerHTML = shoot;
         giocatorePunti++;
     } else {
